@@ -1,0 +1,121 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/Montserrat.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: sub;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* background: rgba(25, 0, 255, 0.149); */
+    box-sizing: border-box;
+
+    --border-color: #0F2725;
+    --border-bg: #071415;
+    --button-color: #46FFFF;
+    --spacing-edge: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+body {
+    background : #030F10;
+}
+main{
+    margin-top: 15vh;
+}
+section{
+    position: relative;
+    padding: var(--spacing-edge);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section-border{
+    border-radius: 10px;
+    margin: var(--spacing-edge);
+    border: 2px solid var(--border-color);
+    padding:30px 15px;
+}
+
+.section-border-bg{
+    background: url(../assets/images/bgSetup.png) no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: bold;
+    font-size: 2.45rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+
+}
+h2{
+    font-family: sub;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+}
+p{
+    font-family: light;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+img{
+    height: 100%;
+}
+
+
+
+.desktop{
+    display: none;
+}
+h3, .section-tag{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: light;
+}
+.mobile{
+    display: block;
+}
+
+
+@media screen and (min-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        --spacing-edge: 0 50px;
+    }
+
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    h1{
+        font-family: bold;
+        font-size: 5rem;
+        line-height: 5.1rem;
+    }
+    h2{
+        font-family: sub;
+        font-size: 2.6rem;
+        line-height: 2.7rem;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: normal;
+    }
+    .section-border{
+        border-radius: 10px;
+        margin: var(--spacing-edge);
+        border: 2px solid var(--border-color);
+        padding: 40px;
+    }
+}

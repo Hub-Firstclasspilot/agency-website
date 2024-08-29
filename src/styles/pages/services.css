@@ -1,0 +1,65 @@
+.ser{
+    background: none;
+}
+.service {
+    background: none;
+    .servTop {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .servicesList {
+        margin-top: 80px;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+
+        .servBox {
+
+            .servImg {
+                height: 250px;
+                margin: 20px 0 30px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .ser{
+        background: none;
+    }
+    .service {
+        .servTop {
+            margin-top: 40px;
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 4rem;
+                line-height: 4.1rem;
+                width: 800px;
+            }
+            p {
+                padding-top: 20px;
+                width: 800px;
+            }
+        }
+
+        .servicesList {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            flex-direction: column;
+
+            .servBox {
+
+                .servImg {
+                    height: 300px;
+                    margin: 20px 0 30px;
+                }
+            }
+        }
+    }
+}
