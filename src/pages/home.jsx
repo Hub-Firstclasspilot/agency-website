@@ -38,7 +38,7 @@ export default function Home() {
                                 <Button alt>Portfolio</Button>
                             </Link>
                             <Link to="/book">
-                                <Button>Book Flight</Button>
+                                <Button>Book a Flight</Button>
                             </Link>
                         </div>
                     </div>

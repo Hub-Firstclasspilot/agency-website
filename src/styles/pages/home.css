@@ -35,7 +35,7 @@ main {
             position: relative;
             overflow: hidden;
 
-            img{
+            img {
                 width: 100%;
                 height: 120%;
                 transform: translateY(-30px);
@@ -46,11 +46,20 @@ main {
         }
 
         .hero-action {
-            margin-top: 10px;
+            margin-top: 30px;
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 20px;
+
+            a {
+                width: 100%;
+
+                button {
+                    width: 100%;
+                }
+            }
         }
 
         .hero-flex {
@@ -183,22 +192,27 @@ main {
                 }
             }
 
-            .portfolio-contentBoxX:nth-child(1){
+            .portfolio-contentBoxX:nth-child(1) {
                 background: #DF7753;
             }
-            .portfolio-contentBoxX:nth-child(2){
+
+            .portfolio-contentBoxX:nth-child(2) {
                 background: #61B5E4;
             }
-            .portfolio-contentBoxX:nth-child(3){
+
+            .portfolio-contentBoxX:nth-child(3) {
                 background: #6FC950;
             }
-            .portfolio-contentBoxX:nth-child(4){
+
+            .portfolio-contentBoxX:nth-child(4) {
                 background: #CD6AF0;
             }
-            .portfolio-contentBoxX:nth-child(5){
+
+            .portfolio-contentBoxX:nth-child(5) {
                 background: #E39A1C;
             }
-            .portfolio-contentBoxX:nth-child(6){
+
+            .portfolio-contentBoxX:nth-child(6) {
                 background: #14BB93;
             }
         }
@@ -208,7 +222,7 @@ main {
         margin-top: 40px;
         background: url(../../assets/images/bgSetup.png);
         background-size: cover;
-        
+
 
         .services-main-text {
             text-align: center;
@@ -302,7 +316,7 @@ main {
                 display: flex;
                 justify-content: space-between;
                 background: #46ffff24;
-        border: 2px solid #46FFFF;
+                border: 2px solid #46FFFF;
 
 
                 padding: 5px;
@@ -382,6 +396,7 @@ main {
         /* Move by 1/3 of the total width */
     }
 }
+
 .hero-ImgRight {
     display: none;
 }
@@ -407,7 +422,7 @@ main {
                     position: relative;
                     display: block;
 
-                    img{
+                    img {
                         position: absolute;
                         top: -7.8rem;
                         right: 20px;
@@ -454,6 +469,15 @@ main {
                 justify-content: initial;
                 align-items: center;
                 gap: 10px;
+                flex-direction: row;
+
+                a {
+                    width: fit-content;
+    
+                    button {
+                        width: fit-content;
+                    }
+                }
             }
 
             .hero-flex {
@@ -605,7 +629,7 @@ main {
 
                 .blog-box {
                     border-radius: 20px;
-                    padding:30px;
+                    padding: 30px;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
@@ -743,16 +767,16 @@ main {
                         }
 
                         .test-text {
-                        padding: 0 20px;
+                            padding: 0 20px;
                             margin-top: 30px;
                             font-size: 1rem;
                             line-height: 1.8rem;
                         }
 
                         .test-authuer {
-                        padding: 0 20px;
+                            padding: 0 20px;
 
-                            margin-top:40px;
+                            margin-top: 40px;
 
                             .name {
                                 font-size: 1.2rem;
@@ -767,6 +791,7 @@ main {
                     }
                 }
             }
+
             .test-content::-webkit-scrollbar {
                 display: none;
             }
