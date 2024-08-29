@@ -30,13 +30,15 @@ export default function Home() {
                                 <p>Social Media</p>
                             </div>
                         </div>
-                        <div className="hero-image"></div>
+                        <div className="hero-image">
+                            <img src={lady} alt="" />
+                        </div>
                         <div className="hero-action">
                             <Link to="/project">
                                 <Button alt>Portfolio</Button>
                             </Link>
                             <Link to="/book">
-                                <Button>Book A Flight</Button>
+                                <Button>Book Flight</Button>
                             </Link>
                         </div>
                     </div>
@@ -58,14 +60,14 @@ export default function Home() {
                             <img src={ico1} alt="" />
 
                         </div>
-                        <p className="hero-flex-txt">87 Websites</p>
+                        <p className="hero-flex-txt">23 Apps</p>
                     </div>
                     <div className="hero-flex-content">
                         <div className="hero-flex-img">
                             <img src={ico2} alt="" />
 
                         </div>
-                        <p className="hero-flex-txt">87 Websites</p>
+                        <p className="hero-flex-txt">6 Industries</p>
                     </div>
                     <div className="hero-flex-content">
                         <div className="hero-flex-img">
@@ -73,7 +75,7 @@ export default function Home() {
                                 <path fill="none" stroke="#cd6af0" strokeLinecap="round" strokeWidth={2} d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"></path>
                             </svg>
                         </div>
-                        <p className="hero-flex-txt">87 Websites</p>
+                        <p className="hero-flex-txt">72 Clients</p>
                     </div>
                 </div>
             </section>
@@ -171,7 +173,7 @@ export default function Home() {
                     </div>
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">Entertainment and <br />
-                        Media</p>
+                            Media</p>
                         <div className="content-image"></div>
                     </div>
                     <div className="portfolio-contentBoxX">
