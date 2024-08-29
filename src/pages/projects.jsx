@@ -210,9 +210,30 @@ export function ProjectOne() {
                             <p className="value">{list.company}</p>
                         </div>
                         <div className="co-box">
-                            <p className="label">Company</p>
-                            <p className="value">Project Company</p>
+                            <p className="label">Headquarters</p>
+                            <p className="value">{list.headquaters}</p>
                         </div>
+                        <div className="co-box">
+                            <p className="label">Founded</p>
+                            <p className="value">{list.founded}</p>
+                        </div>
+                        <div className="co-box">
+                            <p className="label">Industry</p>
+                            <p className="value">{list.industries}</p>
+                        </div>
+                        <div className="co-box">
+                            <p className="label">Revenue</p>
+                            <p className="value">{list.revenue}</p>
+                        </div>
+                        <div className="co-box">
+                            <p className="label">Size</p>
+                            <p className="value">{list.size}</p>
+                        </div>
+                        <div className="co-box">
+                            <p className="label">Website</p>
+                            <p className="value">{list.website}</p>
+                        </div>
+
                     </div>
                     <div className="infoBox">
                         <div className="co-full-box">
