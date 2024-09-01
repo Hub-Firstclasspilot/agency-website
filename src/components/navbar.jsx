@@ -15,6 +15,14 @@ export function Navbar() {
         { link: "/services", name: "Services" }
     ];
 
+    const navListMo = [
+        { link: "/", name: "Home" },
+        { link: "/project", name: "Portfolio" },
+        { link: "/about", name: "Meet The Pilots" },
+        { link: "/services", name: "Services" },
+        { link: "/book", name: "Contact" }
+    ];
+
     // Check if the current path starts with '/project' or is exactly '/'
     const isProjectPage = location.pathname.startsWith('/project');
     const isHomePage = location.pathname === '/';
@@ -63,7 +71,7 @@ export function Navbar() {
                 open ? (
                     <div className="navListMobile">
                         {
-                            navList.map((item, index) => {
+                            navListMo.map((item, index) => {
                                 return (
                                     <Link key={"l" + index} to={item.link} onClick={() => { setOpen(!open) }}>
                                         <div className="navText">

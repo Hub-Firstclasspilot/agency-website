@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
     backdrop-filter: blur(20px);
 
@@ -26,7 +26,6 @@
         .navHamBox {
             height: 40px;
             width: 40px;
-            colo
         }
     }
 
@@ -48,7 +47,7 @@
 button {
     background: var(--button-color);
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: bold;
     font-weight: 700;
     padding: 15px 25px;
@@ -122,8 +121,8 @@ footer {
     button {
         background: var(--button-color);
         border: none;
-        font-size: 1rem;
-        padding: 15px 34px;
+        font-size: .9rem;
+        padding: 15px 30px;
         border-radius: 100px;
         color: black;
         font-weight: 700;

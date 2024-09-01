@@ -26,12 +26,14 @@
                 input {
                     width: 100%;
                     border: none;
-                    padding: 15px 20px;
+                    padding: 18px 20px;
                     border-radius: 10px;
                     color: white;
                     border: 2px solid white;
                     font-size: 1rem;
                     outline: none;
+                    background: none;
+        font-family: light;
                 }
 
 
@@ -57,33 +59,39 @@ textarea {
     padding: 20px;
     font-size: 1rem;
     outline: none;
+    background: none;
+    font-family: light;
 }
 
 
-.bookDone{
-    padding-top: 18vh;
-    backdrop-filter: blur(10px);
+.bookDone {
+    padding-top: 14vh;
+    /* backdrop-filter: blur(10px); */
+    background: rgba(0, 0, 0, 0.736);
     z-index: 50;
     position: fixed;
     height: 100vh;
     width: 100%;
     top: 0;
 
-    .sucWrap{
+    .sucWrap {
         text-align: center;
         border: 2px solid white;
         border-radius: 10px;
+        background: #030F10;
 
         padding: 20px;
     }
 
-    .sucBoxImg{
+    .sucBoxImg {
         height: 230px;
         margin-top: 20px;
         border-radius: 10px;
+        background: url(../../assets/images/img1.jpg) no-repeat center/cover;
+        background-position: 0px -100px;
     }
 
-    .sucAction{
+    .sucAction {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -93,74 +101,80 @@ textarea {
 
 
 @media screen and (min-width: 600px) {
-    .book{
+    .book {
         display: flex;
-        gap: 30px;
+        gap: 80px;
 
-        .leftBook{
+        .leftBook {
             width: 600px;
         }
-        .rightBook{
+
+        .rightBook {
             flex: 1;
             border-radius: 20px;
+            background: url(../../assets/images/img2.jpg) no-repeat top/cover;
         }
     }
+
     .bookInfo {
         margin-top: 40px;
+
         p {
             margin-top: 10px;
         }
     }
-    
-    
+
+
     .formBook {
-        margin-top: 20px;
-    
+        margin-top: 40px;
+
         form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-    
+            gap: 16px;
+
             .fomWrapDouble {
                 display: flex;
                 flex-direction: row;
-                gap: 10px;
-    
+                gap: 16px;
+
                 .inWrap {
                     flex: 1;
+
                     .fLabel {
                         margin-bottom: 8px;
                         font-size: 1rem;
                     }
-    
+
                     input {
                         width: 100%;
                         border: none;
-                        padding: 10px 20px;
+                        padding: 15px 20px;
                         border-radius: 10px;
                         color: white;
                         border: 2px solid white;
                         font-size: .9rem;
                         outline: none;
+                        font-family: light;
                     }
-    
-    
+
+
                 }
             }
-    
+
             .formAction {
                 margin-top: 30px;
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
 
-                button{
+                button {
                     width: 100%;
                 }
             }
         }
     }
-    
+
     textarea {
         margin-top: 10px;
         width: 100%;
@@ -171,40 +185,51 @@ textarea {
         padding: 20px;
         font-size: 1rem;
         outline: none;
+        background: none;
+        font-family: light;
     }
 
-    .bookDone{
+    .bookDone {
         padding: 0 40vh;
-        padding-top: 18vh;
-        backdrop-filter: blur(10px);k
+        padding-top: 14vh;
         z-index: 50;
         position: fixed;
         height: 100vh;
         width: 100%;
         top: 0;
-    
-        .sucWrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sucTop {
+            font-size: .9rem;
+        }
+
+        .sucWrap {
             text-align: center;
             border: 2px solid white;
+
             border-radius: 10px;
-    
-            padding: 20px;
+            width: 700px;
+            padding: 20px 60px ;
         }
-    
-        .sucBoxImg{
-            height:300px;
+
+        .sucBoxImg {
+            height: 300px;
             margin-top: 20px;
             border-radius: 10px;
+            background: url(../../assets/images/img1.jpg) no-repeat top/cover;
+            background-position: 0px -200px;
         }
-    
-        .sucAction{
+
+        .sucAction {
             margin-top: 30px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 10px;
 
-            button{
+            button {
                 width: fit-content;
             }
         }

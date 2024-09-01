@@ -7,8 +7,9 @@ export default function Footer() {
             <div className="footer-wrap">
                 <div className="footer-top">
                     <p className="footerHead">Contact</p>
-                    <p className="fooList">+234 123456789</p>
-                    <p className="fooList">const@firstclasspilot.com</p>
+                    <p><a href="tel:+234 9156129963">+234 9156129963</a></p>
+                    
+                    <p><a href="mailto:hi@firstclasspilot.com">hi@firstclasspilot.com</a></p>
                 </div>
                 <div className="footer-botoom">
                     <div className="footer-top">

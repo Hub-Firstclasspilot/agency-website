@@ -39,7 +39,7 @@ export default function Book() {
                 <div className="leftBook">
                     <div className="bookInfo">
                         <h2>Get Started Today</h2>
-                        <p>Reachout and we’ll be in touch in 24 hours.</p>
+                        <p>Welcome aboard! Purchase your ticket to an unmatched business solution by scheduling a call or filling out the form</p>
                     </div>
 
                     <div className="formBook">
@@ -52,18 +52,18 @@ export default function Book() {
                                 </div>
                                 <div className="inWrap">
                                     <p className="fLabel">Last Name</p>
-                                    <input type="text" placeholder="First name" />
+                                    <input type="text" placeholder="Last name" />
                                 </div>
                             </div>
 
                             <div className="fomWrapDouble">
                                 <div className="inWrap">
                                     <p className="fLabel">Company</p>
-                                    <input type="text" placeholder="First name" />
+                                    <input type="text" placeholder="Company" />
                                 </div>
                                 <div className="inWrap">
                                     <p className="fLabel">Phone Number (Optional)</p>
-                                    <input type="text" placeholder="First name" />
+                                    <input type="text" placeholder="Phone Number" />
                                 </div>
                             </div>
 

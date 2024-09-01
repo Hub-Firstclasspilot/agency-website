@@ -86,6 +86,10 @@
         }
 
         .infoTeamList {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            flex-direction: column;
             .TeamMember {
                 .teamImgBox {
                     height: 300px;
@@ -189,7 +193,7 @@
         }
 
         .aboutVM {
-            margin-top: 40px;
+            margin-top: 80px;
             display: flex;
             flex-direction: row;
 

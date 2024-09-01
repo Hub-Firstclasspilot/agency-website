@@ -50,14 +50,14 @@
             margin-top: 80px;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            gap: 60px;
             flex-direction: column;
 
             .servBox {
 
                 .servImg {
                     height: 300px;
-                    margin: 20px 0 30px;
+                    margin: 40px 0 30px;
                 }
             }
         }

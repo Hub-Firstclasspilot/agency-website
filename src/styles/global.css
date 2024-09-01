@@ -82,6 +82,12 @@ h3, .section-tag{
 .mobile{
     display: block;
 }
+a{
+    font-family: light;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
 
 
 @media screen and (min-width: 600px) {
@@ -109,8 +115,9 @@ h3, .section-tag{
         line-height: 2.7rem;
     }
     p{
-        font-size: 1.3rem;
-        line-height: normal;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 500;
     }
     .section-border{
         border-radius: 10px;

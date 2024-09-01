@@ -38,7 +38,8 @@ export default function About() {
                 if (data?.bannerImages?.length > 0) {
                     setImages(data.bannerImages);
                 }
-
+                console.log(data);
+                
                 setList(data);
             } catch (error) {
                 console.error(error);
@@ -158,7 +159,7 @@ export default function About() {
                         {list.teams?.map((item, index) => (
                             <div key={"tem" + index} className="TeamMember">
                                 <div className="teamImgBox" style={{ 
-                                    background: `url(${urlFor(item.profile?.asset?._ref)?.url()}) no-repeat center/cover` 
+                                    background: `url(${urlFor(item.profile?.asset?._ref)?.url()}) no-repeat top/cover` 
                                 }}>
                                 </div>
                                 <div className="teamDon">
