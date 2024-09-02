@@ -20,7 +20,7 @@ export default function Home() {
                     <div className="hero-boWrap">
                         <div className="hero-text">
                             <h1>FirstClassPilot</h1>
-                            <p>Elevating your business to new heights. <br /> An Awarding wining 360 Technology Agency</p>
+                            <p>Elevating your business to new heights. <br /> Awarding wining 360 Technology Agency</p>
 
                             {/* <div className="hero-tag">
                                 <p>Digital Ads</p>
@@ -89,35 +89,69 @@ export default function Home() {
                 </div>
                 <div className="company-logos">
                     <div className="company-logo-wrapper">
-                        <div className="company-logo a1">
-                            <img src={img1} alt="" />
+                        <div className="ni">
+                            <div className="company-logo a1">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="company-logo a2">
+                                <img src={img2} alt="" />
+                            </div>
+                            <div className="company-logo a3">
+                                <img src={img3} alt="" />
+                            </div>
+                            <div className="company-logo a4">
+                                <img src={img4} alt="" />
+                            </div>
+                            <div className="company-logo a5">
+                                <img src={img5} alt="" />
+                            </div>
+                            <div className="company-logo a1">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="company-logo a2">
+                                <img src={img2} alt="" />
+                            </div>
+                            <div className="company-logo a3">
+                                <img src={img3} alt="" />
+                            </div>
+                            <div className="company-logo a4">
+                                <img src={img4} alt="" />
+                            </div>
+                            <div className="company-logo a5">
+                                <img src={img5} alt="" />
+                            </div>
                         </div>
-                        <div className="company-logo a2">
-                            <img src={img2} alt="" />
-                        </div>
-                        <div className="company-logo a3">
-                            <img src={img3} alt="" />
-                        </div>
-                        <div className="company-logo a4">
-                            <img src={img4} alt="" />
-                        </div>
-                        <div className="company-logo a5">
-                            <img src={img5} alt="" />
-                        </div>
-                        <div className="company-logo a1">
-                            <img src={img1} alt="" />
-                        </div>
-                        <div className="company-logo a2">
-                            <img src={img2} alt="" />
-                        </div>
-                        <div className="company-logo a3">
-                            <img src={img3} alt="" />
-                        </div>
-                        <div className="company-logo a4">
-                            <img src={img4} alt="" />
-                        </div>
-                        <div className="company-logo a5">
-                            <img src={img5} alt="" />
+                        <div className="ni">
+                            <div className="company-logo a1">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="company-logo a2">
+                                <img src={img2} alt="" />
+                            </div>
+                            <div className="company-logo a3">
+                                <img src={img3} alt="" />
+                            </div>
+                            <div className="company-logo a4">
+                                <img src={img4} alt="" />
+                            </div>
+                            <div className="company-logo a5">
+                                <img src={img5} alt="" />
+                            </div>
+                            <div className="company-logo a1">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="company-logo a2">
+                                <img src={img2} alt="" />
+                            </div>
+                            <div className="company-logo a3">
+                                <img src={img3} alt="" />
+                            </div>
+                            <div className="company-logo a4">
+                                <img src={img4} alt="" />
+                            </div>
+                            <div className="company-logo a5">
+                                <img src={img5} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,28 +167,28 @@ export default function Home() {
                 <div className="protfolio-content">
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">E-Commerence</p>
-                        <div className="content-image" style={{background: `url(https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover`}}></div>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">Fintech</p>
-                        <div className="content-image" style={{background: `url(https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover`}}></div>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">Transport</p>
-                        <div className="content-image" style={{background: `url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover`}}></div>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">Entertainment and <br />
                             Media</p>
-                        <div className="content-image" style={{background: `url(https://images.pexels.com/photos/67654/pexels-photo-67654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover`}}></div>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/67654/pexels-photo-67654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">Web 3</p>
-                        <div className="content-image" style={{background: `url(https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover`}}></div>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
                         <p className="content-box-txt">Edutech</p>
-                        <div className="content-image" style={{background: `url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover`}}></div>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                 </div>
             </section>
@@ -227,7 +261,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="whoBase">
-                    
+
                     <div className="whoGridWrap">
                         <div className="whoItem"></div>
                         <div className="whoItem"></div>
