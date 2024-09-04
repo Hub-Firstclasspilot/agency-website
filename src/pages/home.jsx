@@ -20,7 +20,7 @@ export default function Home() {
                     <div className="hero-boWrap">
                         <div className="hero-text">
                             <h1>FirstClassPilot</h1>
-                            <p>Awarding wining 360 Technology Agency</p>
+                            <p> Awarding wining 360 Technology Agency</p>
 
                             {/* <div className="hero-tag">
                                 <p>Digital Ads</p>
