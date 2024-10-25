@@ -37,7 +37,7 @@ export default function Home() {
                             <Link to="/project">
                                 <Button alt>Portfolio</Button>
                             </Link>
-                            <Link to="/book">
+                            <Link to="/services">
                                 <Button>Our Services</Button>
                             </Link>
                         </div>
@@ -67,7 +67,7 @@ export default function Home() {
                             <img src={ico2} alt="" />
 
                         </div>
-                        <p className="hero-flex-txt">80 Clients</p>
+                        <p className="hero-flex-txt">800k+ Clients</p>
                     </div>
                     <div className="hero-flex-content">
                         <div className="hero-flex-img">
@@ -178,16 +178,16 @@ export default function Home() {
                         <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Entertainment and <br />
+                        <p className="content-box-txt">Entertainment and 
                             Media</p>
                         <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/67654/pexels-photo-67654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Web 3</p>
+                        <p className="content-box-txt">Ai</p>
                         <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Edutech</p>
+                        <p className="content-box-txt">Cybersecurity</p>
                         <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Home() {
 
             <section className="services section-border">
                 <div className="services-main-text">
-                    <h3 className="section-tag">Services</h3>
+                    <h3 className="section-tag">Our Blog</h3>
                     <h2>Industries We Have Worked With</h2>
                 </div>
 
@@ -257,6 +257,10 @@ export default function Home() {
                         <div className="who-badge-box">
                             <p>Behance</p>
                         </div>
+                        <div className="who-badge-box">
+                            <p>Tiktok</p>
+                        </div>
+
 
                     </div>
                 </div>
