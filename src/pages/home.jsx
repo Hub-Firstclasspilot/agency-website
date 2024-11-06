@@ -158,42 +158,6 @@ export default function Home() {
             </section>
 
 
-            <section className="portfolio ">
-                <div className="portfolio-main-text">
-                    <h3 className="section-tag">Portfolio</h3>
-                    <h2>Industries We Have Worked With</h2>
-                </div>
-
-                <div className="protfolio-content">
-                    <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">E-Commerence</p>
-                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
-                    </div>
-                    <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Fintech</p>
-                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
-                    </div>
-                    <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Transport</p>
-                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
-                    </div>
-                    <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Entertainment and 
-                            Media</p>
-                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/67654/pexels-photo-67654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
-                    </div>
-                    <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Ai</p>
-                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
-                    </div>
-                    <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Cybersecurity</p>
-                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
-                    </div>
-                </div>
-            </section>
-
-
             <section className="services section-border">
                 <div className="services-main-text">
                     <h3 className="section-tag">Our Blog</h3>
@@ -232,6 +196,50 @@ export default function Home() {
                     <Button full>Read Our Meduim Blog</Button>
                 </div>
             </section>
+
+            <section className="portfolio ">
+                <div className="portfolio-main-text">
+                    <h3 className="section-tag">Portfolio</h3>
+                    <h2>Industries We Have Worked With</h2>
+                </div>
+
+                <div className="protfolio-content">
+                    <div className="portfolio-contentBoxX">
+                        <p className="content-box-txt">E-Commerence</p>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
+                    </div>
+                    <div className="portfolio-contentBoxX">
+                        <p className="content-box-txt">Fintech</p>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
+                    </div>
+                    <div className="portfolio-contentBoxX">
+                        <p className="content-box-txt">Transport</p>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
+                    </div>
+                    <div className="portfolio-contentBoxX">
+                        <p className="content-box-txt">Entertainment and 
+                            Media</p>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/67654/pexels-photo-67654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
+                    </div>
+                    <div className="portfolio-contentBoxX">
+                        <p className="content-box-txt">Ai</p>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover` }}></div>
+                    </div>
+                    <div className="portfolio-contentBoxX">
+                        <p className="content-box-txt">Cybersecurity</p>
+                        <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
+                    </div>
+                </div>
+
+                <div className="protfolio-con">
+                    <Link to="/book">
+                        <Button>Book an appointment</Button>
+                    </Link>
+                </div>
+            </section>
+
+
+            
 
 
             <section className="who section-border">

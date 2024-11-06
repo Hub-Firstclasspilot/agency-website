@@ -54,9 +54,9 @@ export function Navbar() {
                     </div>
                 </div>
                 <div className="navAction">
-                    <div className="navButton desktop">
+                    <div className="navButton ">
                         <Link to="/book">
-                            <Button>Book a Call</Button>
+                            <Button>Book Appointment</Button>
                         </Link>
                     </div>
                     <div className="navHamBox mobile" onClick={() => { setOpen(!open) }}>

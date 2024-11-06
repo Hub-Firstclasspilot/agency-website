@@ -42,6 +42,17 @@
         }
     }
 }
+.navAction{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .navButton{
+        button{
+            zoom: 60%;
+            background: #FFB856;
+        }
+    }
+}
 
 /* button */
 button {

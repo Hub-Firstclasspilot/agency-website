@@ -79,6 +79,9 @@ h3, .section-tag{
     font-weight: 500;
     font-family: light;
 }
+h3{
+    color: #FFB856;
+}
 .mobile{
     display: block;
 }

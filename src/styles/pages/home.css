@@ -157,7 +157,7 @@ main {
                 }
             }
         }
-        
+
     }
 
     .portfolio {
@@ -465,6 +465,18 @@ main {
     }
 }
 
+.protfolio-con {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+    }
+}
+
 
 
 .hero-ImgRight {
@@ -476,6 +488,7 @@ main {
         left: -545%;
     }
 }
+
 @keyframes slide {
     to {
         left: -190%;
