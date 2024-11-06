@@ -139,6 +139,17 @@ footer {
         font-weight: 700;
     }
 
+    .navAction{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .navButton{
+            button{
+                zoom: 100%;
+                background: #FFB856;
+            }
+        }
+    }
     footer {
         margin-top: 80px;
 
