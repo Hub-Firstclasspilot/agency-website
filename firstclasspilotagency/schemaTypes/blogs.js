@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
-export const serviceTypes = defineType({
+export const blogTypes = defineType({
   name: 'blogs',
-  title: 'Your Blog List',
+  title: 'Agency Blog',
   type: 'document',
   fields: [
     defineField({
@@ -12,7 +12,7 @@ export const serviceTypes = defineType({
     }),
     defineField({
       title: 'Info',
-      name: 'Blog Info',
+      name: 'blogInfo',
       type: 'string',
     }),
     defineField({
@@ -23,5 +23,10 @@ export const serviceTypes = defineType({
         hotspot: true
       }
     }),
+    defineField({
+        title: 'Link',
+        name: 'blogLink',
+        type: 'string',
+      }),
   ],
 })

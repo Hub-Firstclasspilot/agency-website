@@ -10,8 +10,32 @@ import img5 from "../assets/images/igboogo.png"
 import ico1 from "../assets/images/Vector-1.svg"
 import ico2 from "../assets/images/Vector-2.svg"
 import ico3 from "../assets/images/Vector.svg"
+import { useEffect, useState } from "react"
+import { client, urlFor } from "../sanityClient"
 
 export default function Home() {
+    const [blogs, setBlogs] = useState([])
+
+    useEffect(() => {
+        async function getBlogs() {
+            client
+                .fetch(`
+                    *[_type == "blogs"]{
+                        blogTitle,
+                        blogInfo,
+                        blogLink,
+                       "blogImage" : blogImage.asset._ref
+                    }
+                `)
+                .then((data) => {
+                    console.log(data)
+                    setBlogs(data)
+                })
+                .catch(console.error)
+        }
+        getBlogs()
+    }, [])
+
     return (
         <main>
             <section className="hero section-border">
@@ -165,31 +189,26 @@ export default function Home() {
                 </div>
 
                 <div className="services-blog">
-                    <div className="blog-box">
-                        <div className="blog-box-image"></div>
-                        <h2 className="blog-header">Blog Post Text</h2>
-                        <p className="blog-text">A blog content reduced to short text for short readers</p>
-                        <div className="blog-action">
-                            <Button full alt>Read On Medium</Button>
-                        </div>
-                    </div>
-                    <div className="blog-box">
-                        <div className="blog-box-image"></div>
-                        <h2 className="blog-header">Blog Post Text</h2>
-                        <p className="blog-text">A blog content reduced to short text for short readers</p>
-                        <div className="blog-action">
-                            <Button full alt>Read On Medium</Button>
-                        </div>
-                    </div>
-
-                    <div className="blog-box">
-                        <div className="blog-box-image"></div>
-                        <h2 className="blog-header">Blog Post Text</h2>
-                        <p className="blog-text">A blog content reduced to short text for short readers</p>
-                        <div className="blog-action">
-                            <Button full alt>Read On Medium</Button>
-                        </div>
-                    </div>
+                    {
+                        blogs?.map((item, index) => {
+                            if (index < 3) {
+                                return (
+                                    <div key={"blog" + index} className="blog-box">
+                                        <div className="blog-box-image">
+                                            <img src={urlFor(item.blogImage)?.url()} alt="" />
+                                        </div>
+                                        <h2 className="blog-header">{item.blogTitle}</h2>
+                                        <p className="blog-text">{item.blogInfo}</p>
+                                        <div className="blog-action">
+                                            <Link to={item.blogLink}>
+                                            <Button full alt>Read On Medium</Button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        })
+                    }
                 </div>
 
                 <div className="blog-last-action">
@@ -217,7 +236,7 @@ export default function Home() {
                         <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
                     <div className="portfolio-contentBoxX">
-                        <p className="content-box-txt">Entertainment and 
+                        <p className="content-box-txt">Entertainment and
                             Media</p>
                         <div className="content-image" style={{ background: `url(https://images.pexels.com/photos/67654/pexels-photo-67654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover` }}></div>
                     </div>
@@ -239,7 +258,7 @@ export default function Home() {
             </section>
 
 
-            
+
 
 
             <section className="who section-border">

@@ -741,9 +741,15 @@ main {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    width: 450px;
 
                     .blog-box-image {
                         height: 250px;
+                        overflow: hidden;
+
+                        img{
+                            height: initial;
+                        }
                     }
 
                     .blog-header {
