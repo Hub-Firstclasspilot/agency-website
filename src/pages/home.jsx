@@ -185,7 +185,7 @@ export default function Home() {
             <section className="services section-border">
                 <div className="services-main-text">
                     <h3 className="section-tag">Our Blog</h3>
-                    <h2>Industries We Have Worked With</h2>
+                    <h2>Read Some Of Our Blog Articles On Medium</h2>
                 </div>
 
                 <div className="services-blog">
@@ -257,10 +257,6 @@ export default function Home() {
                 </div>
             </section>
 
-
-
-
-
             <section className="who section-border">
                 <div className="who-top">
                     <div className="who-main-text">
@@ -305,7 +301,6 @@ export default function Home() {
 
                 </div>
             </section>
-
 
             <section className="test section-border">
                 <div className="test-main-text">
