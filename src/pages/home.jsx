@@ -13,8 +13,57 @@ import ico3 from "../assets/images/Vector.svg"
 import { useEffect, useState } from "react"
 import { client, urlFor } from "../sanityClient"
 
+
+import test1 from "../assets/mon/IMG-20241107-WA0028.jpg"
+import test2 from "../assets/mon/IMG-20241107-WA0029.jpg"
+import test3 from "../assets/mon/IMG-20241107-WA0030.jpg"
+import test4 from "../assets/mon/IMG-20241107-WA0031.jpg"
+import test5 from "../assets/mon/IMG-20241107-WA0032.jpg"
+import test6 from "../assets/mon/IMG-20241107-WA0033.jpg"
+import test7 from "../assets/mon/IMG-20241107-WA0034.jpg"
+
 export default function Home() {
     const [blogs, setBlogs] = useState([])
+
+    const reveiws = [
+        {
+            img: test6,
+            name: "Mathias TCHAGBE",
+            content: `At  FirstClassPilot, they offer quality services.  I really appreciate.
+                        They opened my website for me and they are also managing it for me They will not just  deliver and  leave you,
+                         but they also do follow up to make sure that you get the result that you want.`
+        },
+        {
+            img: test5,
+            name: "Tyler Garrett",
+            content: `High quality Strategy, Design, and Technology services. Amazing customer service. The business owner is someone you want on your team & projects.`
+        },
+        {
+            img: test2,
+            name: "Rosemary Auld",
+            content: `Very professional well managed company, highly recommend  for all your needs, would definitely work with them again .`
+        },
+        {
+            img: test4,
+            name: "Beat Gaud",
+            content: `Amazing experience in accomplishing and accommodating request. If your not working with this organization you are not first class`
+        },
+        {
+            img: test7,
+            name: "Bolaji Adegboyega",
+            content: `Amazing Team with an extraordinary customer service provision. Will always recommend.`
+        },
+        {
+            img: test3,
+            name: "OKOLI Dera",
+            content: `Customer service is top notch and they pay attention to details.`
+        },
+        {
+            img: test1,
+            name: "Roselyn Sanders",
+            content: `Awesome work by first class pilot 💯`
+        }
+    ]
 
     useEffect(() => {
         async function getBlogs() {
@@ -201,7 +250,7 @@ export default function Home() {
                                         <p className="blog-text">{item.blogInfo}</p>
                                         <div className="blog-action">
                                             <Link to={item.blogLink}>
-                                            <Button full alt>Read On Medium</Button>
+                                                <Button full alt>Read On Medium</Button>
                                             </Link>
                                         </div>
                                     </div>
@@ -321,56 +370,24 @@ export default function Home() {
 
                 <div className="test-content">
                     <div className="test-content-wrap">
-                        <div className="test-box">
-                            <div className="test-img">
-
-                            </div>
-                            <p className="test-text">
-                                We are very happy to work with this team and we look forward to work with them again and again
-                            </p>
-                            <div className="test-authuer">
-                                <p className="name">Pilot Obi</p>
-                                <p className="company-name">Abibi Hola Dubia</p>
-                            </div>
-                        </div>
-
-                        <div className="test-box">
-                            <div className="test-img">
-
-                            </div>
-                            <p className="test-text">
-                                We are very happy to work with this team and we look forward to work with them again and again
-                            </p>
-                            <div className="test-authuer">
-                                <p className="name">Pilot Obi</p>
-                                <p className="company-name">Abibi Hola Dubia</p>
-                            </div>
-                        </div>
-
-                        <div className="test-box">
-                            <div className="test-img">
-
-                            </div>
-                            <p className="test-text">
-                                We are very happy to work with this team and we look forward to work with them again and again
-                            </p>
-                            <div className="test-authuer">
-                                <p className="name">Pilot Obi</p>
-                                <p className="company-name">Abibi Hola Dubia</p>
-                            </div>
-                        </div>
-                        <div className="test-box">
-                            <div className="test-img">
-
-                            </div>
-                            <p className="test-text">
-                                We are very happy to work with this team and we look forward to work with them again and again
-                            </p>
-                            <div className="test-authuer">
-                                <p className="name">Pilot Obi</p>
-                                <p className="company-name">Abibi Hola Dubia</p>
-                            </div>
-                        </div>
+                        {
+                            reveiws.map((item, index) => {
+                                return (
+                                    <div key={"li"+index} className="test-box">
+                                        <div className="test-img">
+                                            <img src={item.img}/>
+                                        </div>
+                                        <p className="test-text">
+                                            {item.content}
+                                        </p>
+                                        <div className="test-authuer">
+                                            <p className="name">{item.name}</p>
+                                            {/* <p className="company-name">Abibi Hola Dubia</p> */}
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>

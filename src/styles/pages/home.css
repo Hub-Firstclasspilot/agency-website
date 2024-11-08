@@ -31,15 +31,15 @@ main {
         .hero-image {
             display: flex;
             justify-content: center;
-            height: 242px;
+            height: 282px;
             margin-top: 10px;
             position: relative;
             overflow: hidden;
 
             img {
                 width: 100%;
-                height: 120%;
-                transform: translateY(-30px);
+                height: 160%;
+                transform: translateY(-50px);
                 object-fit: contain;
                 position: absolute;
                 z-index: 100;
@@ -516,9 +516,9 @@ main {
 
                     img {
                         position: absolute;
-                        top: -7.8rem;
+                        top: -7.1rem;
                         right: 20px;
-                        width: 420px;
+                        width: 400px;
                         height: 130%;
                     }
                 }
@@ -747,7 +747,7 @@ main {
                         height: 250px;
                         overflow: hidden;
 
-                        img{
+                        img {
                             height: initial;
                         }
                     }
@@ -942,20 +942,24 @@ main {
 
 
                     .test-box {
+                        padding: 0 20px;
+                        width: 350px;
+
                         .test-img {
-                            height: 350px;
-                            width: 350px;
+                            height: 70px;
+                            width: 70px;
+                            border-radius: 1000px;
+                            background: red;
+                            overflow: hidden;
                         }
 
                         .test-text {
-                            padding: 0 20px;
                             margin-top: 30px;
                             font-size: 1rem;
                             line-height: 1.8rem;
                         }
 
                         .test-authuer {
-                            padding: 0 20px;
 
                             margin-top: 40px;
 
