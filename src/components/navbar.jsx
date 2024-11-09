@@ -55,7 +55,7 @@ export function Navbar() {
                 </div>
                 <div className="navAction">
                     <div className="navButton ">
-                        <Link to="/book">
+                        <Link  to="https://calendly.com/firstclasspilot/30min">
                             <Button>Book Appointment</Button>
                         </Link>
                     </div>

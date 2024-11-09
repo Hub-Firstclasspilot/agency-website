@@ -439,13 +439,20 @@ main {
 
 
                 .test-box {
-                    .test-img {
-                        height: 250px;
-                        width: 250px;
-                    }
+                    padding: 0 0px;
+
+                        .test-img {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 1000px;
+                            /* background: red; */
+                            overflow: hidden;
+                        }
 
                     .test-text {
                         margin-top: 10px;
+                        width: 240px;
+
                     }
 
                     .test-authuer {
