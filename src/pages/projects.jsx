@@ -57,7 +57,9 @@ export function ProjectList() {
                                 <div className="pro-box">
                                     <div
                                         className="pro-box-img"
-                                        style={{ background: `url(${urlFor(item.images).url()}) no-repeat center/cover` }}
+                                        style={{
+                                            background: `url(${item.images ? urlFor(item.images).url() : 'fallback-image-url'}) no-repeat center/cover`,
+                                        }}
                                     ></div>
                                     <h2>{item.group}</h2>
                                 </div>
