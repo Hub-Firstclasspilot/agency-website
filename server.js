@@ -1,4 +1,4 @@
-  import { serve } from "bun";
+import { serve } from "bun";
 import { statSync, readFileSync } from "fs";
 import { resolve, join, extname } from "path";
 
@@ -14,29 +14,28 @@ const fileExists = (path) => {
   } catch {
     return false;
   }
-}
+};
 
 // Helper to determine MIME type
 const getMimeType = (filePath) => {
   const ext = extname(filePath);
   switch (ext) {
-    case '.js': return 'application/javascript';
-    case '.css': return 'text/css';
-    case '.html': return 'text/html';
-    case '.json': return 'application/json';
-    case '.png': return 'image/png';
-    case '.jpg':
-    case '.jpeg': return 'image/jpeg';
-    case '.gif': return 'image/gif';
-    case '.svg': return 'image/svg+xml';
-    default: return 'application/octet-stream'; // Fallback
+    case ".js": return "application/javascript";
+    case ".css": return "text/css";
+    case ".html": return "text/html";
+    case ".json": return "application/json";
+    case ".png": return "image/png";
+    case ".jpg":
+    case ".jpeg": return "image/jpeg";
+    case ".gif": return "image/gif";
+    case ".svg": return "image/svg+xml";
+    default: return "application/octet-stream"; // Fallback
   }
-}
+};
 
 console.log(`🚀 Server starting...`);
 console.log(`📂 Serving files from: ${DIST_PATH}`);
 
-// Server configuration
 serve({
   port: PORT,
   fetch(req) {
@@ -44,10 +43,13 @@ serve({
     const filePath = join(DIST_PATH, url.pathname);
     const timestamp = new Date().toLocaleTimeString();
 
+    console.log(`[DEBUG] Received request for: ${url.pathname}`);
+    console.log(`[DEBUG] Checking file: ${filePath}`);
+
     // Try to serve static file
     if (fileExists(filePath)) {
       const mimeType = getMimeType(filePath);
-      console.log(`[${timestamp}] 📁 Serving static file: ${url.pathname}`);
+      console.log(`[${timestamp}] 📁 Serving static file: ${url.pathname} with MIME type: ${mimeType}`);
       return new Response(readFileSync(filePath), {
         headers: {
           "Content-Type": mimeType,
